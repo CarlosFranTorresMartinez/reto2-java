@@ -33,7 +33,7 @@ public class Rifas extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlMenuRifas = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnGenerarRifas = new javax.swing.JButton();
         txtCantidadRifas = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         btnSelectGanadores = new javax.swing.JButton();
@@ -47,10 +47,10 @@ public class Rifas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Generar Rifas");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnGenerarRifas.setText("Generar Rifas");
+        btnGenerarRifas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnGenerarRifasActionPerformed(evt);
             }
         });
 
@@ -94,7 +94,7 @@ public class Rifas extends javax.swing.JFrame {
                                         .addComponent(txtCantidadRifas)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(pnlMenuRifasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnGenerarRifas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                     .addGroup(pnlMenuRifasLayout.createSequentialGroup()
                         .addGap(127, 127, 127)
@@ -110,7 +110,7 @@ public class Rifas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlMenuRifasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtCantidadRifas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btnGenerarRifas))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlMenuRifasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSelectGanadores)
@@ -154,7 +154,7 @@ public class Rifas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGenerarRifasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarRifasActionPerformed
         List<String> list = new ArrayList<>();
 
         if (txtCantidadRifas.getText().isEmpty()) {
@@ -183,7 +183,7 @@ public class Rifas extends javax.swing.JFrame {
             listRifas.setModel(listModel);
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnGenerarRifasActionPerformed
 
     private void btnSelectGanadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelectGanadoresActionPerformed
         final HashSet<Integer> hashSet = new HashSet<>();
@@ -227,8 +227,8 @@ public class Rifas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGenerarRifas;
     private javax.swing.JButton btnSelectGanadores;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel7;
