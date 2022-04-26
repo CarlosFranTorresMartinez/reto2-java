@@ -15,6 +15,7 @@ public class Rifas extends javax.swing.JFrame {
 
     public Rifas() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     private Integer generateNumberRandom() {
@@ -210,7 +211,7 @@ public class Rifas extends javax.swing.JFrame {
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows Classic".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
 

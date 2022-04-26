@@ -1,12 +1,12 @@
 package reto;
 
 public class Menu extends javax.swing.JFrame {
-
+    
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -16,22 +16,19 @@ public class Menu extends javax.swing.JFrame {
         lblTitle = new javax.swing.JLabel();
         CONTAINER = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnEjercicio4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BACKGROUND.setBackground(new java.awt.Color(0, 153, 153));
+        BACKGROUND.setBackground(new java.awt.Color(255, 255, 255));
 
-        lblTitle.setBackground(new java.awt.Color(0, 204, 204));
+        HEADER.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblTitle.setBackground(new java.awt.Color(255, 255, 255));
         lblTitle.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("RETO 2 – GUI CON JAVA JFRAME ");
-        lblTitle.setOpaque(true);
 
         javax.swing.GroupLayout HEADERLayout = new javax.swing.GroupLayout(HEADER);
         HEADER.setLayout(HEADERLayout);
@@ -44,71 +41,49 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
         );
 
-        CONTAINER.setBackground(new java.awt.Color(0, 153, 153));
+        CONTAINER.setBackground(new java.awt.Color(255, 255, 255));
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 51));
+        jButton1.setBackground(new java.awt.Color(29, 185, 84));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI Semilight", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("BONUS");
+        jButton1.setText("CALCULADORA");
         jButton1.setBorderPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("EJERCICIO 1");
-        jButton2.setBorderPainted(false);
-
-        jButton3.setBackground(new java.awt.Color(0, 153, 51));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("EJERCICIO 2");
-        jButton3.setBorderPainted(false);
-
-        jButton4.setBackground(new java.awt.Color(0, 153, 51));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("EJERCICIO 3");
-        jButton4.setBorderPainted(false);
-
-        jButton5.setBackground(new java.awt.Color(0, 153, 51));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("EJERCICIO 4");
-        jButton5.setBorderPainted(false);
-
-        jButton6.setBackground(new java.awt.Color(0, 153, 51));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("EJERCICIO 5");
-        jButton6.setBorderPainted(false);
+        btnEjercicio4.setBackground(new java.awt.Color(29, 185, 84));
+        btnEjercicio4.setFont(new java.awt.Font("Leelawadee UI Semilight", 1, 18)); // NOI18N
+        btnEjercicio4.setForeground(new java.awt.Color(255, 255, 255));
+        btnEjercicio4.setText("RIFAS");
+        btnEjercicio4.setBorderPainted(false);
+        btnEjercicio4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjercicio4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout CONTAINERLayout = new javax.swing.GroupLayout(CONTAINER);
         CONTAINER.setLayout(CONTAINERLayout);
         CONTAINERLayout.setHorizontalGroup(
             CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CONTAINERLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addGroup(CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addGap(76, 76, 76)
+                .addComponent(btnEjercicio4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(jButton1)
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         CONTAINERLayout.setVerticalGroup(
             CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CONTAINERLayout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(52, 52, 52)
                 .addGroup(CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(CONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEjercicio4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(181, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout BACKGROUNDLayout = new javax.swing.GroupLayout(BACKGROUND);
@@ -126,15 +101,25 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(CONTAINER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(BACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 370));
+        getContentPane().add(BACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnEjercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio4ActionPerformed
+        Rifas rifas = new Rifas();
+        rifas.setVisible(true);
+    }//GEN-LAST:event_btnEjercicio4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Calculadora calculadora = new Calculadora();
+        calculadora.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows Classic".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -142,7 +127,7 @@ public class Menu extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
+        
         java.awt.EventQueue.invokeLater(() -> {
             new Menu().setVisible(true);
         });
@@ -152,12 +137,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel BACKGROUND;
     private javax.swing.JPanel CONTAINER;
     private javax.swing.JPanel HEADER;
+    private javax.swing.JButton btnEjercicio4;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
 }
